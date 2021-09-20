@@ -26,37 +26,38 @@ body {
   margin-bottom: 16px;
 }
 
-.separator {
+table {
   width: 100%;
-  height: 1px;
-  background-color: #EFF1F2;
-  margin-top: 16px;
-  margin-bottom: 13px;
 }
 
-.card-content {
+table tr {
   display: grid;
-  grid-gap: 24px;
-  grid-template-columns: repeat(2,1fr);
-}
-
-.card-item {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eff1f2;
-  border-radius: 16px;
-  padding: 16px;
-}
-
-.card-item p {
-  color: #627179;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 12px;
   font-weight: 600;
-  font-size: 10px;
-  margin-bottom: 9px;
+  color: #4d5a60;
+  border-bottom: 1px solid #eff1f2;
+  padding: 10px;
 }
 
-.card-item span {
-  color: #696969;
-  font-weight: 700;
-  font-size: 14px;
+table tr th {
+  text-align: left;
 }
+
+table tr th p {
+  font-size: 9px;
+  font-weight: 600;
+  color: #4d5a60;
+  margin-top: 0;
+}
+
+table tr th span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4d5a60;
+}
+
+table tr:last-child{
+  border: none;
+}
+
